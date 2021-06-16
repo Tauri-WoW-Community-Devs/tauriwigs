@@ -1,0 +1,18 @@
+## Interface: 50400
+## X-Curse-Packaged-Version: r1126
+## X-Curse-Project-Name: LittleWigs
+## X-Curse-Project-ID: little-wigs
+## X-Curse-Repository-ID: wow/little-wigs/mainline
+
+## Title: LittleWigs
+## Notes: Boss warnings for 5-man dungeons & scenarios.
+## Notes-itIT: Avvisi per i boss delle spedizioni & scenari
+## Author: Funkydude
+## X-Category: Party
+## X-Credits: Ulic
+
+## X-BigWigs-LoadOn-ZoneId: 875, 885, 871, 874, 898, 877, 887, 876, 867
+## Dependencies: BigWigs
+## LoadOnDemand: 1
+
+modules.xml

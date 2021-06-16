@@ -1,0 +1,47 @@
+local L = LibStub("AceLocale-3.0"):NewLocale("Ra-den Assist", "frFR")
+if not L then return end
+
+L["allowed"] = "Les memvres du raid ont été mis à jour." -- Needs review
+L["assist"] = "Soutien" -- Needs review
+-- L["assist_desc"] = "Open the main config for more options /bwra. Emphasizing this is highly recommended"
+L["balls"] = "Ordre perso. d'élimination des boules" -- Needs review
+L["balls_desc"] = "Vous pouvez personnaliser l'ordre d'élimination dans le sous-panneau d'options quand vous tapez /bwra. Si vous êtes DPS, mettre en évidence ceci est fortement recommandé." -- Needs review
+-- L["ballstouching"] = "Balls touching (%d)"
+L["cicle"] = "CERCLE" -- Needs review
+L["close"] = "Fermer" -- Needs review
+L["close_desc"] = "Ferme l'affichage de l'Assistant Ra-den." -- Needs review
+L["cross"] = "CROIX" -- Needs review
+L["denied"] = "Vous devez être chef de raid ou un de ses assistants pour faire cela !" -- Needs review
+L["diamond"] = "DIAMANT" -- Needs review
+L["firstkillredcount"] = "Combien de boules rouges doivent être tuées avant que vous ne commenciez à ne plus tuer aucune boule ?" -- Needs review
+-- L["fullysynced"] = "Everyone in the active groups (first 2 (10 H) or 5 (25 H)) received the roster update."
+-- L["group"] = "Group"
+L["group1icon"] = "Icône utilisée pour le Groupe 1" -- Needs review
+L["group2icon"] = "Icône utilisée pour le Groupe 2" -- Needs review
+L["groupfilter"] = "Permet à l'affichage de l'Assistant Ra-den d'afficher les deux groupes, pas uniquement celui dans lequel vous vous trouvez." -- Needs review
+L["killred"] = "Tuez la boule |cffff0000ROUGE|r" -- Needs review
+L["loaded"] = "Chargé. Pour configurer, tapez /bwra" -- Needs review
+L["modname"] = "Assistant Ra-Den" -- Needs review
+-- L["nextingroup"] = "Next in %s: %s"
+L["notsynced"] = "Les joueurs suivants n'ont pas reçus les mises à jour du roster : %s" -- Needs review
+L["optionssync"] = "Options de synchro" -- Needs review
+L["optionssyncbutton_header"] = "Envoie les options (ordre d'élimination des boules, icônes des groupes) aux autres utilisateurs de BigWigs_Ra-denAssist (nécessite d'être assistant/chef de raid)." -- Needs review
+-- L["restkillredcount"] = "How many red balls should be killed in general (aka: after 1st) before you don't kill any balls?"
+L["square"] = "CARRÉ" -- Needs review
+L["star"] = "ÉTOILE" -- Needs review
+L["syncbutton"] = "Envoyer les listes" -- Needs review
+L["syncbutton_header"] = "Envoie les listes aux autres utilisateurs de BigWigs_Ra-denAssist (nécessite d'être chef/assistant du raid)." -- Needs review
+L["toggleloc_desc"] = "Indique si la fenêtre de l'Assistant Ra-den doit être verrouillée ou non." -- Needs review
+L["togglelock"] = "(Dé)verrouiller" -- Needs review
+L["triangle"] = "TRIANGLE" -- Needs review
+-- L["unassigned"] = "Unassigned:"
+L["update"] = "Priorité pour Vita instable '%s' mis à jour à %s par %s." -- Needs review
+L["updatereceived"] = "Mise à jour reçue de : %s." -- Needs review
+L["updateroster"] = "Mettre à jour le roster" -- Needs review
+-- L["updateroster_desc"] = "Update roster from the first 2 (10 H) or 5 (25 H) groups."
+-- L["updatingroster"] = "Updating roster from the first 2 (10 H) or 5 (25 H) groups."
+L["warn"] = "Avertissement raid" -- Needs review
+L["warn_desc"] = "Indique à votre raid ce qu'il faut faire avec un Avertissement raid. Nécessite d'être chef de raid ou un de ses assistants." -- Needs review
+-- L["wrongdifficulty"] = "Wrong difficulty (or maybe you are not in an instance)! Change to either 10 H or 25 H, then try again."
+-- L["yourturntosoak"] = "Probably your turn to soak"
+

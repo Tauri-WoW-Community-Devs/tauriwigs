@@ -1,0 +1,76 @@
+54000
+Immerseus
+-Fixed Swirl timers
+Norushen
+-Fixed warmup
+Sha
+-Added Unleashed Bolts
+
+53000
+Iron Juggernaut
+-Optimised Timers
+-Synced Timers
+-Added all inits
+-Added Cutter Laser timers
+-Removed Laser Burn
+-Fix double engage
+Lei Shen
+-Revert Hali Bouncing Bolts
+Core
+-Version Bump
+
+52006
+Ji-Kun
+-Fix 25HC nest timers for live realms, hali 60s cd
+Mogu'shan Palace, Scarlet Halls, Scarlet Monastery, Shado-Pan Monastery
+-Adjust Timers
+Temple of the Jade Serpent, Stormstout Brewery, Gate of the Setting Sun, Scholomance, Siege of Niuzao Temple
+-Now Scripted
+Core
+-Include Little Wigs
+-Update MapIDs for Options
+-Bumped Ra-den Assist TOC to 50400
+
+52005
+Lei Shen
+-Added Crashing Thunder timer
+Ji-Kun
+-Fixed 2nd nest timer on 25HC, but it doesn't matter because the boss doesn't work anyway
+Horridon
+-Initial timers more accurate
+
+52004
+Ra-den
+-Fixed Ra-den Assist load issue
+-Added timer for first Crackling Stalker
+-Fixed LUA error after wipe
+Lei Shen
+-Fixed Bouncing Bolt intermission timers on 25 (FS#12688)
+-Fixed variable reset bug
+
+52003
+-Include base SoO scripts
+-Lei Shen
+ -Boss frames fix, added all boss values to trigger just incase
+ -Ball Lightning changed to 45s cd, was slightly off before
+ -Fixed all timers with new inits (ty higi)
+ -Removed Berserk timer, there isn't one
+ -Removed new conduit bars, they now cast insta
+-Durumu
+ -Light Spectrum timers set 2s earlier
+-Iron Qon
+ -Boss frames fix
+ -Stop Frost Spike on Windstorm
+ -Delayed 1st Dam'ren Unleashed Flame by 3sec
+ -Fixed Fist Smash timer properly
+
+52002
+-Public release updates
+-Anima Font fails reported in Raid Chat on Heroic difficulty
+-Ball Lightning P2 Init fix (20s -> 13s)
+
+52001
+-Fix Version Checking
+
+52000
+-Release

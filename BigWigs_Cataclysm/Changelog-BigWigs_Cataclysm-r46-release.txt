@@ -1,0 +1,13 @@
+------------------------------------------------------------------------
+r46 | funkydude | 2014-09-01 22:42:24 +0000 (Mon, 01 Sep 2014) | 1 line
+Changed paths:
+   A /tags/r46-release (from /trunk:45)
+
+Tagging as r46-release
+------------------------------------------------------------------------
+r45 | funkydude | 2013-09-29 22:43:14 +0000 (Sun, 29 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/Blackwing/Maloriak.lua
+
+Maloriak: fix phase change message
+------------------------------------------------------------------------

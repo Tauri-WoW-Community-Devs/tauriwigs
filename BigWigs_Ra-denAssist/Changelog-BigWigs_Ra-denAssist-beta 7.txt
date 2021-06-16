@@ -1,0 +1,91 @@
+------------------------------------------------------------------------
+r17 | maat | 2013-05-20 13:42:56 +0000 (Mon, 20 May 2013) | 1 line
+Changed paths:
+   A /tags/beta 7 (from /trunk:16)
+
+Tagging as beta 7
+------------------------------------------------------------------------
+r16 | maat | 2013-05-20 13:42:13 +0000 (Mon, 20 May 2013) | 2 lines
+Changed paths:
+   M /trunk/Core.lua
+
+call the groups by their raid marker rather than by group 1 or 2 to avoid confusion
+fix some option text that did not use localized entries
+------------------------------------------------------------------------
+r14 | maat | 2013-05-20 11:08:21 +0000 (Mon, 20 May 2013) | 4 lines
+Changed paths:
+   M /trunk/Core.lua
+
+don't do anything in anima phase
+throttle the sync response
+fix the main mod ball bar cancellation
+fix the custom ball kill order warnings
+------------------------------------------------------------------------
+r12 | maat | 2013-05-17 14:03:53 +0000 (Fri, 17 May 2013) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+announce the groups in raid chat when syncing
+------------------------------------------------------------------------
+r10 | maat | 2013-05-17 09:25:11 +0000 (Fri, 17 May 2013) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+sync groups rather than players one by one
+------------------------------------------------------------------------
+r8 | maat | 2013-05-12 14:25:36 +0000 (Sun, 12 May 2013) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+fix vita bar
+------------------------------------------------------------------------
+r6 | maat | 2013-05-10 12:07:37 +0000 (Fri, 10 May 2013) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+add response to roster sync update so the sender knows who haven't gotten the update
+------------------------------------------------------------------------
+r4 | maat | 2013-05-06 19:34:23 +0000 (Mon, 06 May 2013) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+fix the bar
+------------------------------------------------------------------------
+r3 | maat | 2013-05-06 17:40:45 +0000 (Mon, 06 May 2013) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+remove some debug code
+------------------------------------------------------------------------
+r2 | maat | 2013-05-06 17:39:18 +0000 (Mon, 06 May 2013) | 1 line
+Changed paths:
+   A /trunk/.pkgmeta
+   A /trunk/BigWigs_Ra-denAssist.toc
+   A /trunk/Core.lua
+   A /trunk/Locales
+   A /trunk/Locales/deDE.lua
+   A /trunk/Locales/esES.lua
+   A /trunk/Locales/esMX.lua
+   A /trunk/Locales/frFR.lua
+   A /trunk/Locales/itIT.lua
+   A /trunk/Locales/koKR.lua
+   A /trunk/Locales/ptBR.lua
+   A /trunk/Locales/ruRU.lua
+   A /trunk/Locales/zhCN.lua
+   A /trunk/Locales/zhTW.lua
+   A /trunk/Textures
+   A /trunk/Textures/icons
+   A /trunk/Textures/icons/lock.tga
+   A /trunk/Textures/icons/un_lock.tga
+   A /trunk/locales.xml
+
+initial commit
+------------------------------------------------------------------------
+r1 | svn | 2013-05-06 17:25:43 +0000 (Mon, 06 May 2013) | 1 line
+Changed paths:
+   A /branches
+   A /tags
+   A /trunk
+
+bigwigs_ra-denassist/mainline: Initial Import
+------------------------------------------------------------------------

@@ -1,0 +1,32 @@
+## Interface: 50400
+## X-Curse-Packaged-Version: r13040
+## X-Curse-Project-Name: BigWigs Bossmods
+## X-Curse-Project-ID: big-wigs
+## X-Curse-Repository-ID: wow/big-wigs/mainline
+
+## Title: Big Wigs [|cffeda55fSiege of Orgrimmar|r] (|cff3399FFiNFEH|r)
+## Title-deDE: Big Wigs [|cffeda55fSiege of Orgrimmar|r]
+## Title-esES: Big Wigs [|cffeda55fSiege of Orgrimmar|r]
+## Title-frFR: Big Wigs [|cffeda55fSiège d'Orgrimmar|r]
+## Title-ruRU: Big Wigs [|cffeda55fОсада Оргриммара|r]
+## Title-zhCN: Big Wigs [|cffeda55f决战奥格瑞玛|r]
+## Title-zhTW: Big Wigs [|cffeda55f圍攻奧格瑪|r]
+## Title-itIT: Big Wigs [|cffeda55fAssedio di Orgrimmar|r]
+## Notes: Big Wigs Modules for the Siege of Orgrimmar. (|cff3399FFiNFEH|r)
+## Notes-deDE: Big Wigs Modules for the Siege of Orgrimmar.
+## Notes-esES: Big Wigs Modules for the Siege of Orgrimmar.
+## Notes-frFR: Modules Big Wigs concernant le Siège d'Orgrimmar.
+## Notes-ruRU: Модуль Big Wigs для Осады Оргриммара.
+## Notes-zhCN: Big Wigs 决战奥格瑞玛模块。
+## Notes-zhTW: Big Wigs 圍攻奧格瑪模組。
+## Notes-itIT: Moduli Big Wigs per l'Assedio di Orgrimmar.
+
+## LoadOnDemand: 1
+## Dependencies: BigWigs
+
+## X-Category: Raid
+## X-BigWigs-LoadOn-ZoneId: 953
+
+locales.xml
+modules.xml
+
