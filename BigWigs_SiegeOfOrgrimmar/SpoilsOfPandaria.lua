@@ -52,7 +52,7 @@ function mod:GetOptions()
 		145288, {145461, "TANK"}, {142947, "TANK"}, 142694, -- Mogu crate
 		{145987, "FLASH"}, 145747, {145692, "TANK"}, 145715, {145786, "DISPEL"},-- Mantid crate
 		{146217, "FLASH"}, 146222, 146257, -- Crate of Panderan Relics
-		{"warmup", "EMPHASIZE"}, "bosskill",
+		{"warmup", "EMPHASIZE"}, "berserk", "bosskill",
 	}, {
 		[146815] = CL.heroic,
 		[145288] = -8434, -- Mogu crate
@@ -78,6 +78,7 @@ end
 
 function mod:OnBossEnable()
 	self:RegisterEvent("INSTANCE_ENCOUNTER_ENGAGE_UNIT", "CheckBossStatus")
+	self:RegisterEvent("ENCOUNTER_END")
 
 	-- Crate of Panderan Relics
 	self:Log("SPELL_DAMAGE", "PathOfBlossoms", 146257)
@@ -105,6 +106,17 @@ function mod:OnBossEnable()
 	self:Yell("Win", L.win_trigger)
 end
 
+function mod:ENCOUNTER_END(_, id, name, diff, size, win)
+	-- Sometimes there's a long delay between the last IEEU and IsEncounterInProgress being false so use this instead.
+	if id == 1594 then
+		if win == 1 then
+			self:Win(true)
+		else
+			self:Wipe()
+		end
+	end
+end
+
 function mod:Warmup()
 	self:Bar("warmup", 19, COMBAT, "achievement_boss_spoils_of_pandaria")
 end
@@ -116,6 +128,7 @@ function mod:OnEngage()
 
 	sparkCounter = 0
 	wipe(bossUnitPowers)
+	self:RegisterEvent("UPDATE_WORLD_STATES") -- berserk
 	-- Sometimes there's a long delay between the last IEEU and IsEncounterInProgress being false so use this as a backup.
 	self:StopWipeCheck()
 	self:RegisterEvent("PLAYER_REGEN_ENABLED", "StartWipeCheck")
@@ -275,3 +288,29 @@ function mod:SetToBlowApplied(args)
 	end
 end
 
+function mod:UPDATE_WORLD_STATES()
+	-- NEW MISSION! I want you to blow up... THE OCEAN!
+	-- If it wasn't clear from this code, I don't trust this API at all.
+	-- Hardcoding the values and firing :Berserk on engage/room change seemed to end up with timers going out of sync.
+	-- Doing this without timer refreshing every 60 seconds also ended up with sync issues.
+	-- Repeatedly running through LFR to test various methods was also a delightful experience.
+	-- Pretty much, I hate it. The only positive from this is that we don't need to schedule the messages.
+	-- If this ever breaks in a future patch, $#!+.
+	local _, _, _, enrage = GetWorldStateUIInfo(5)
+	if enrage then
+		local remaining = enrage:match("%d+")
+		if remaining then
+			local timeRemaining = tonumber(remaining)
+			if timeRemaining and timeRemaining > 0 then
+				if timeRemaining > prevEnrage or timeRemaining % 60 == 0 then
+					self:Bar("berserk", timeRemaining+1, 26662) -- +1s to compensate for timer rounding.
+				end
+				-- It shouldn't fire the same value twice, but throttle for safety.
+				if timeRemaining ~= prevEnrage and (timeRemaining == 60 or timeRemaining == 30 or timeRemaining == 10 or timeRemaining == 5) then
+					self:Message("berserk", "Positive", nil, format(CL.custom_sec, self:SpellName(26662), timeRemaining), 26662)
+				end
+				prevEnrage = timeRemaining
+			end
+		end
+	end
+end
